@@ -19,10 +19,10 @@ jobs:
     - name: Check Azure Credentials
       run: az account show
 
-    - name: Install terraform
-      uses: hashicorp/setup-terraform@v1
-      with:
-        terraform_version: 1.9.5
+    # - name: Install terraform
+    #   uses: hashicorp/setup-terraform@v1
+    #   with:
+    #     terraform_version: 1.9.5
     
     - name: Initialize terraform
       run: terraform init
